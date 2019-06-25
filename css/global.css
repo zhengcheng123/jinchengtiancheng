@@ -31,7 +31,9 @@ img {
 body {
 	color: #333;
 	font-size: 14px;
-	font-family: PingFangSC-Medium;
+	font-family: Helvetica Neue,Helvetica,Arial,Microsoft Yahei,Hiragino Sans GB,Heiti SC,WenQuanYi Micro Hei,sans-serif;
+	font: 14px Arial,"PingFang SC","Hiragino Sans GB",STHeiti,"Microsoft YaHei","WenQuanYi Micro Hei",sans-serif;
+	
 }
 
 ul,

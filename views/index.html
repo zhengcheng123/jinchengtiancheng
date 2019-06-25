@@ -1,33 +1,206 @@
 <!DOCTYPE html>
 <html>
+
 	<head>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
 		<title>晋城天成化工有限公司</title>
-		<link rel="stylesheet" type="text/css" href="../css/global.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/global.css" />
 		<style type="text/css">
 			.banner {
 				min-width: 1200px;
 				width: 100%;
-				padding-top: 25%;
+				max-height: 200px;
+				padding-top: 27%;
+				margin-bottom: 20px;
 				background: url(../img/banner.png) no-repeat center center;
 				background-size: 100% 100%;
+				position: relative;
 			}
 			
 			.banner .content {
+				width: 800px;
+				display: flex;
+				flex-direction: column;
+				justify-content: space-around;
+				align-items: center;
+				padding: 2% 0 5%;
+				position: absolute;
+				top: 0;
+				right: 0;
+				bottom: 0;
+				left: 0;
+				margin: auto;
+			}
+			
+			.banner .content .name {
+				color: #FFFFFF;
+				font-size: 16px;
+				display: flex;
+				flex-direction: row;
+				align-items: center;
+			}
+			
+			.banner .content .name::before {
+				content: '';
+				width: 50px;
+				height: 2px;
+				background-color: #FFFFFF;
+				margin-right: 20px;
+			}
+			
+			.banner .content .name::after {
+				content: '';
+				width: 50px;
+				height: 2px;
+				background-color: #FFFFFF;
+				margin-left: 20px;
+			}
+			
+			.banner .content .ambition {
+				width: 90%;
+				display: flex;
+				flex-direction: row;
+				justify-content: space-around;
+			}
+			
+			.banner .content .ambition li {
+				width: 40px;
+				height: 40px;
+				color: rgba(255, 255, 255, 1);
+				font-size: 38px;
+				font-weight: bold;
+				line-height: 40px;
+				letter-spacing: 20px;
+				background: linear-gradient(-270deg, rgba(255, 255, 255, 1) 22.3876953125%, rgba(121, 153, 255, 1) 100%);
+				-webkit-background-clip: text;
+				-webkit-text-fill-color: transparent;
+			}
+			
+			.banner .content .slogan {
+				width: 60%;
+				display: flex;
+				flex-direction: row;
+				justify-content: space-around;
+			}
+			
+			.banner .content .slogan li {
+				flex: 1;
+				text-align: center;
+				font-size: 18px;
+				color: #FFFFFF;
+				height: 20px;
+				line-height: 20px;
+			}
+			
+			.banner .content .slogan li+li {
+				border-left: 1px solid #FFFFFF;
+			}
+			
+			.banner .content button {
+				width: 160px;
+				height: 45px;
+				color: #7999FF;
+				font-size: 18px;
+				background: rgba(255, 255, 255, 1);
+				border-radius: 10px;
+				border: none;
+				outline: none;
+				cursor: pointer;
+			}
+			
+			.main {
+				display: flex;
+				flex-direction: column;
+			}
+			
+			.main section {
+				display: flex;
+				flex-direction: row;
+				justify-content: space-between;
+			}
+			
+			.main section aside {
+				width: 50%;
+				min-height: 400px;
 				
+				background: url(../img/demo1.png) no-repeat center center;
+				background-size: cover;
+			}
+			
+			.main section article {
+				width: 50%;
+				box-sizing: border-box;
+				background-color: rgba(238, 238, 238, 1);
+				padding: 30px 1vw 20px 50px;
+				overflow-x: auto;
+			}
+			
+			.main section article > .title {
+				font-size: 30px;
+				font-weight: bold;
+				padding-bottom: 5px;
+				border-bottom: 2px solid #7999FF;
+			}
+			
+			.main section article p {
+				line-height: 30px;
+				text-indent: 2em;
+				margin-top: 20px;
+			}
 		</style>
 	</head>
+
 	<body>
 		<header></header>
 		<div class="banner">
-			<div class="content"></div>
+			<div class="content">
+				<span class="name">晋城天成</span>
+				<ul class="ambition">
+					<li>引</li>
+					<li>领</li>
+					<li>化</li>
+					<li>工</li>
+					<li>潮</li>
+					<li>流</li>
+					<li>提</li>
+					<li>高</li>
+					<li>生</li>
+					<li>活</li>
+					<li>品</li>
+					<li>质</li>
+				</ul>
+				<ul class="slogan">
+					<li>诚信为本</li>
+					<li>卓越务实</li>
+					<li>精益求精</li>
+					<li>共同发展</li>
+				</ul>
+				<button class="about-us">关于我们</button>
+
+			</div>
 		</div>
 		<div class="main">
-			
+			<section>
+				<aside></aside>
+				<article>
+					<span class="title">公司概况</span>
+					<p>
+						晋城天成化工有限公司成立于2007年8月，位于陵川县崇文镇嘉落铺村，现有员工235人，是中国橡胶工业协会理事 单位。2009年被晋城市工商行政管理局评为守合同重信用企业; 2013年被晋城市商务局授予对外贸易先进企业，被山西 省科技厅评为省级民营科技企业；2014年被晋城市中小企业局评为创新型企业，同时公司的技术中心通过省中小企业局 评审，认定为省级中小企业技术中心，且公司的商标“四方”2014年被山西省工商行政管理局授予“山西省著名商标”称 号，国家高新技术企业，是山西省乃至中西部地区唯一生产橡胶促进剂的企业。
+					</p>
+					<!--<p>
+						公司占地面积11.2万平方米，职工235人，其中专业技术人员70人，注册资本2000万元。现有总资产11905万元，资 产负债率28.3%，2014年销售收入13296万元，其中出口创汇220万美元，实现利税2170万元。
+					</p>
+					<p>
+						目前公司拥有年产17000吨橡胶促进剂生产线，主要产品为橡胶促进剂MBT、MBTS、CBS、NOBS、TBBS、 TMTD六个品种。主要用于轮胎、橡胶、胶带、胶鞋等，有的产品还可用于医疗行业，出口量约为30%。产品销往美 国、韩国、印度、英国等多个国家和地区，主要用户为全球轮胎生产商和国内知名轮胎生产企业。
+					</p>
+					<p>
+						公司生产的橡胶促进剂其中的五个产品（MBT、MBTS、CBS、NOBS、TBBS)之间形成了一个产业链，随着中国 经济逐步与国际接轨，橡胶加工行业广泛应用高新技术，以提高橡胶制品的产量和质量。子午轮胎逐步占据轮胎市场， 品种规模逐渐发展齐全，以具有低滚动阻力，抗湿滑和耐磨损的绿色环保型轮胎为代表的高性...
+					</p>-->
+				</article>
+			</section>
 		</div>
 
-		
 		<script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.js"></script>
 
 		<script type="text/javascript">
@@ -36,4 +209,5 @@
 			})
 		</script>
 	</body>
+
 </html>
