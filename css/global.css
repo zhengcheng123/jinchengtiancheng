@@ -28,12 +28,19 @@ img {
 	padding: 0;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: 600;
+}
+
 body {
 	color: #333;
 	font-size: 14px;
-	font-family: Helvetica Neue,Helvetica,Arial,Microsoft Yahei,Hiragino Sans GB,Heiti SC,WenQuanYi Micro Hei,sans-serif;
-	font: 14px Arial,"PingFang SC","Hiragino Sans GB",STHeiti,"Microsoft YaHei","WenQuanYi Micro Hei",sans-serif;
-	
+	font-family: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
 }
 
 ul,
@@ -58,6 +65,12 @@ img {
 
 table {
 	border-collapse: collapse;
+}
+
+button,
+input,
+textarea {
+	outline: none;
 }
 
 .ellipsis {
