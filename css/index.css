@@ -164,6 +164,8 @@
 
 .main .product ul li {
 	flex: 1;
+	display: flex;
+	flex-direction: column;
 	box-shadow: 0 2px 4px rgba(0, 0, 0, .12), 0 0 6px rgba(0, 0, 0, .04)
 }
 
@@ -176,15 +178,16 @@
 }
 
 .main .product ul li div {
+	flex: 1;
 	display: flex;
 	flex-direction: column;
+	justify-content: space-between;
 	align-content: center;
 	padding: 0 28px 30px;
 }
 
 .main .product ul li div span {
-	align-self: center;
-	width: 13vw;
+	display: inline;
 	font-size: 24px;
 	text-align: center;
 	margin: 28px 0 22px;
@@ -204,7 +207,7 @@
 	border-radius: 10px;
 	color: #FFFFFF;
 	font-size: 16px;
-	padding: 12px 44px;
+	padding: 10px 43px;
 	cursor: pointer;
 }
 
@@ -216,4 +219,103 @@
 	cursor: pointer;
 	background: url(../img/arrow.png) no-repeat center right;
 	padding-right: 18px;
+}
+
+.main .market {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	background-color: #EEEEEE;
+}
+
+.main .market aside {
+	width: 50%;
+	padding: 60px 100px 60px 0;
+	border-right: 1px solid #FFFFFF;
+	box-sizing: border-box;
+}
+
+.main .market aside img {
+	float: right;
+}
+
+.main .market article {
+	width: 50%;
+	padding: 60px 10% 60px 100px;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	box-sizing: border-box;
+	background-color: rgba(238, 238, 238, 1);
+}
+
+.main .market article .title {
+	align-self: flex-start;
+	font-size: 30px;
+	font-weight: bold;
+	padding-bottom: 5px;
+	margin-bottom: 20px;
+	border-bottom: 2px solid #7999FF;
+}
+
+.main .market article div p {
+	line-height: 30px;
+}
+
+.main .message {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.main .message .title {
+	align-self: center;
+	font-size: 30px;
+	font-weight: bold;
+	margin: 50px 0 60px;
+	padding-bottom: 5px;
+	border-bottom: 2px solid #7999FF;
+}
+
+.main .message div {
+	/*display: flex;
+	flex-direction: column;
+	justify-content: center;*/
+}
+
+.main .message div p {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 35px;
+}
+
+.main .message div p span {
+	font-size: 18px;
+}
+
+.main .message div p input, .main .message div p textarea {
+	width: 500px;
+	border: 1px solid #CCCCCC;
+	padding: 15px;
+}
+
+.main .message div p textarea {
+	min-width: 500px;
+	max-width: 500px;
+	min-height: 100px;
+	max-height: 300px;
+}
+
+.main .message div p button {
+	border: none;
+	background-color: #7999FF;
+	border-radius: 10px;
+	color: #FFFFFF;
+	font-size: 16px;
+	padding: 10px 43px;
+	cursor: pointer;
 }
