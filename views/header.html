@@ -1,138 +1,146 @@
 <!DOCTYPE html>
 <html>
 
-	<head>
-		<meta charset="UTF-8">
-		<title>晋城天成化工有限公司</title>
-		<link rel="stylesheet" type="text/css" href="../css/global.css" />
-		<style type="text/css">
-			.nav-header {
-				width: 1200px;
-				height: 100px;
-				margin: 0 auto;
-				display: flex;
-				flex-direction: row;
-				align-items: center;
-				justify-content: space-between;
-			}
-			
-			.nav-header img.logo {
-				height: 100%;
-				margin-right: 100px;
-			}
-			
-			.nav-header .nav-list {
-				display: flex;
-				flex-direction: row;
-				align-items: center;
-			}
-			
-			.nav-header .nav-list li {
-				position: relative;
-				font-size: 16px;
-				font-weight: 500;
-				text-align: center;
-				cursor: pointer;
-				margin: 0 20px;
-				transition: all .2s;
-			}
-			
-			.nav-header .nav-list li:after {
-				content: "";
-				width: 0;
-				height: 2px;
-				background: #0D438D;
-				position: absolute;
-				top: 120%;
-				left: 50%;
-				transition: all .2s;
-			}
-			
-			.nav-header .nav-list li:hover:after {
-				left: 0%;
-				width: 100%;
-			}
+<head>
+    <meta charset="UTF-8">
+    <title>晋城天成化工有限公司</title>
+    <link rel="stylesheet" type="text/css" href="../css/global.css"/>
+    <style type="text/css">
+        .nav-header {
+            width: 1200px;
+            height: 100px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+        }
 
-			.nav-header .nav-list li a:hover {
-				color: #0D438D;
-			}
-			
-			.nav-header .language-tab {
-				display: flex;
-				flex-direction: column;
-				justify-content: space-around;
-			}
-			
-			.nav-header .language-tab li {
-				font-weight: 500;
-				cursor: pointer;
-			}
-			
-			.nav-header .language-tab li:hover {
-				color: #0D438D;
-			}
-			
-			.nav-header .language-tab li:first-child {
-				margin-bottom: 5px;
-			}
-			
-			.nav-header .language-tab li.active {
-				color: #0D438D;
-			}
-			
-			.nav-header .contact-info {
-				display: flex;
-				flex-direction: column;
-				justify-content: space-around;
-			}
-			
-			.nav-header .contact-info li {
-				display: flex;
-				flex-direction: row;
-				align-items: center;
-			}
-			
-			.nav-header .contact-info li:first-child {
-				margin-bottom: 15px;
-			}
-			
-			.nav-header .contact-info li img {
-				width: 20px;
-				margin-right: 10px;
-			}
-			
-			.nav-header .contact-info li span {
-				color: #7999FF;
-			}
-		</style>
-	</head>
+        .nav-header .logo {
+            cursor: pointer;
+            height: 100%;
+            margin-right: 100px;
+        }
 
-	<body>
-		<div class="nav-header">
-			<img src="../img/logo.jpg" alt="图片加载失败" class="logo" />
-			<ul class="nav-list">
-				<li><a href="index.html">首页</a></li>
-				<li><a href="company.html">公司概况</a></li>
-				<li><a href="product.html">产品展示</a></li>
-				<li><a href="market.html">市场分布</a></li>
-				<li><a href="message.html">在线留言</a></li>
-				<li><a href="contact.html">联系我们</a></li>
-			</ul>
-			<ul class="language-tab">
-				<li class="active">中文</li>
-				<li>英文</li>
-			</ul>
-			<ul class="contact-info">
-				<li>
-					<img src="../img/icon-phone.png" alt="手机号码" />
-					<span>0356-6820651</span>
-				</li>
-				<li>
-					<img src="../img/icon-email.png" alt="邮箱" />
-					<span>tcxsb0808@126.com</span>
-				</li>
-			</ul>
-		</div>
-	</body>
+        .nav-header .nav-list {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
 
+        .nav-header .nav-list li {
+            position: relative;
+            font-size: 16px;
+            font-weight: 500;
+            text-align: center;
+            cursor: pointer;
+            margin: 0 20px;
+            transition: all .2s;
+        }
+
+        .nav-header .nav-list li:after {
+            content: "";
+            width: 0;
+            height: 2px;
+            background: #0D438D;
+            position: absolute;
+            top: 120%;
+            left: 50%;
+            transition: all .2s;
+        }
+
+        .nav-header .nav-list li:hover:after {
+            left: 0%;
+            width: 100%;
+        }
+
+        .nav-header .nav-list li a:hover {
+            color: #0D438D;
+        }
+
+        .nav-header .language-tab {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+
+        .nav-header .language-tab li {
+            font-weight: 500;
+            cursor: pointer;
+        }
+
+        .nav-header .language-tab li:hover {
+            color: #0D438D;
+        }
+
+        .nav-header .language-tab li:first-child {
+            margin-bottom: 5px;
+        }
+
+        .nav-header .language-tab li.active {
+            color: #0D438D;
+        }
+
+        .nav-header .contact-info {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+
+        .nav-header .contact-info li {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+
+        .nav-header .contact-info li:first-child {
+            margin-bottom: 15px;
+        }
+
+        .nav-header .contact-info li img {
+            width: 20px;
+            margin-right: 10px;
+        }
+
+        .nav-header .contact-info li span {
+            color: #7999FF;
+        }
+    </style>
+</head>
+
+<body>
+<div class="nav-header">
+    <img src="../img/logo.jpg" alt="图片加载失败" class="logo"/>
+    <ul class="nav-list">
+        <li><a href="index.html">首页</a></li>
+        <li><a href="company.html">公司概况</a></li>
+        <li><a href="product.html">产品展示</a></li>
+        <li><a href="market.html">市场分布</a></li>
+        <li><a href="message.html">在线留言</a></li>
+        <li><a href="contact.html">联系我们</a></li>
+    </ul>
+    <ul class="language-tab">
+        <li class="active">中文</li>
+        <li>英文</li>
+    </ul>
+    <ul class="contact-info">
+        <li>
+            <img src="../img/icon-phone.png" alt="手机号码"/>
+            <span>0356-6820651</span>
+        </li>
+        <li>
+            <img src="../img/icon-email.png" alt="邮箱"/>
+            <span>tcxsb0808@126.com</span>
+        </li>
+    </ul>
+</div>
+</body>
+
+<script>
+    $(function () {
+        $('.logo').on('click', function () {
+            window.location.href = 'index.html'
+        })
+    })
+</script>
 </html>
