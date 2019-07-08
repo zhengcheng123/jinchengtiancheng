@@ -28,7 +28,7 @@
             align-items: center;
         }
 
-        .nav-header .nav-list li {
+        .nav-header .nav-list > li {
             position: relative;
             font-size: 16px;
             font-weight: 500;
@@ -38,7 +38,7 @@
             transition: all .2s;
         }
 
-        .nav-header .nav-list li:after {
+        .nav-header .nav-list > li:after {
             content: "";
             width: 0;
             height: 2px;
@@ -49,49 +49,49 @@
             transition: all .2s;
         }
 
-        .nav-header .nav-list li:hover:after {
+        .nav-header .nav-list > li:hover:after {
             left: 0%;
             width: 100%;
         }
 
-        .nav-header .nav-list li a:hover {
+        .nav-header .nav-list > li a:hover {
             color: #0D438D;
         }
 
-        .nav-header .nav-list li.active a {
+        .nav-header .nav-list > li.active a {
             color: #0D438D;
         }
 
-        .nav-header .nav-list li.active:after {
+        .nav-header .nav-list > li.active:after {
             left: 0%;
             width: 100%;
         }
 
 
-        .nav-header .nav-list li:nth-child(2) {
+        .nav-header .nav-list > li:nth-child(2) {
             position: relative;
         }
 
-        .nav-header .nav-list li:nth-child(2):hover .slidedown {
+        .nav-header .nav-list > li:nth-child(2):hover .slidedown {
             display: block;
         }
 
-        .nav-header .nav-list li:nth-child(2):hover .nav-header {
-            height: 200px;
-        }
-
-        .nav-header .nav-list li .slidedown {
+        .nav-header .nav-list > li .slidedown {
             display: none;
             position: absolute;
+            top: 35px;
+            left: -10px;
             z-index: 99;
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 10px 0 0;
+            border-radius: 6px;
         }
 
-        .nav-header .nav-list li .slidedown {
-
-        }
-
-        .nav-header .nav-list li .slidedown li {
-            width: 100px;
+        .nav-header .nav-list > li .slidedown li {
+            width: 80px;
+            color: #FFFFFF;
+            font-size: 14px;
+            margin-bottom: 10px;
         }
 
         .nav-header .language-tab {
