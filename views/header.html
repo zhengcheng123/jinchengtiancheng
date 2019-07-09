@@ -36,7 +36,9 @@
             cursor: pointer;
             margin: 0 20px;
             transition: all .2s;
+            padding: 20px 0;
         }
+
 
         .nav-header .nav-list > li:after {
             content: "";
@@ -44,7 +46,7 @@
             height: 2px;
             background: #0D438D;
             position: absolute;
-            top: 120%;
+            top: 75%;
             left: 50%;
             transition: all .2s;
         }
@@ -54,11 +56,11 @@
             width: 100%;
         }
 
-        .nav-header .nav-list > li a:hover {
+        .nav-header .nav-list > li:hover > a {
             color: #0D438D;
         }
 
-        .nav-header .nav-list > li.active a {
+        .nav-header .nav-list > li.active > a {
             color: #0D438D;
         }
 
@@ -76,14 +78,21 @@
             display: block;
         }
 
+        .nav-header .nav-list > li:nth-child(2):hover .triangle {
+            display: block;
+        }
+
         .nav-header .nav-list > li .slidedown {
             display: none;
+            width: 80px;
             position: absolute;
-            top: 35px;
-            left: -10px;
+            top: 55px;
+            left: -8px;
+            right: 0;
+            margin: auto;
             z-index: 99;
             background-color: rgba(0, 0, 0, 0.8);
-            padding: 10px 0 0;
+            padding: 10px 0;
             border-radius: 6px;
         }
 
@@ -91,7 +100,33 @@
             width: 80px;
             color: #FFFFFF;
             font-size: 14px;
-            margin-bottom: 10px;
+            padding: 5px 0;
+        }
+
+        .nav-header .nav-list > li .slidedown li:hover {
+            background-color: #666666;
+        }
+
+        .nav-header .nav-list > li .slidedown li.active {
+            background-color: #666666;
+        }
+
+        .nav-header .nav-list > li .slidedown li a {
+            color: #FFFFFF;
+        }
+
+        .triangle {
+            display: none;
+            position: absolute;
+            top: 50px;;
+            left: 0;
+            right: 0;
+            margin: auto;
+            width: 0;
+            height: 0;
+            border-left: 5px solid transparent;
+            border-right: 5px solid transparent;
+            border-bottom: 5px solid rgba(0, 0, 0, 0.8);
         }
 
         .nav-header .language-tab {
@@ -148,19 +183,20 @@
 <div class="nav-header">
     <img src="../img/logo.jpg" alt="图片加载失败" class="logo"/>
     <ul class="nav-list">
-        <li><a href="index.html">首页</a></li>
-        <li>
-            <a href="company.html">公司概况</a>
+        <li hrefUrl="index">首页</li>
+        <li style="position:relative;">
+            <a>公司概况</a>
             <ul class="slidedown">
-                <li>公司介绍</li>
-                <li>发展历程</li>
-                <li>资质荣誉</li>
+                <li hrefUrl="introduce">公司介绍</li>
+                <li hrefUrl="progress">发展历程</li>
+                <li hrefUrl="honour">资质荣誉</li>
             </ul>
+            <i class="triangle"></i>
         </li>
-        <li><a href="product.html">产品展示</a></li>
-        <li><a href="market.html">市场分布</a></li>
-        <li><a href="message.html">在线留言</a></li>
-        <li><a href="contact.html">联系我们</a></li>
+        <li hrefUrl="product">产品展示</li>
+        <li hrefUrl="market">市场分布</li>
+        <li hrefUrl="message">在线留言</li>
+        <li hrefUrl="contact">联系我们</li>
     </ul>
     <ul class="language-tab">
         <li class="active">中文</li>
@@ -184,14 +220,40 @@
         $('.logo').on('click', function () {
             window.location.href = 'index.html'
         })
-        let value = window.location.href.indexOf('index') !== -1 ?
-            0 : window.location.href.indexOf('company.html') !== -1 ?
-                1 : window.location.href.indexOf('product') !== -1 ?
-                    2 : window.location.href.indexOf('market') !== -1 ?
-                        3 : window.location.href.indexOf('message') !== -1 ?
-                            4 : window.location.href.indexOf('contact') !== -1 ?
-                                5 : null
-        $('.nav-list > li').eq(value).addClass('active')
+        // let hrefData = ['index', 'introduce', 'product', 'market', 'message', 'contact']
+        // let value = window.location.href.indexOf('index') !== -1 ?
+        //     0 : window.location.href.indexOf('introduce') !== -1 ?
+        //         1 : window.location.href.indexOf('progress') !== -1 ?
+        //             1 : window.location.href.indexOf('honour') !== -1 ?
+        //                 1 : window.location.href.indexOf('product') !== -1 ?
+        //                     2 : window.location.href.indexOf('market') !== -1 ?
+        //                         3 : window.location.href.indexOf('message') !== -1 ?
+        //                             4 : window.location.href.indexOf('contact') !== -1 ?
+        //                                 5 : null
+        // $('.nav-list > li').eq(value).addClass('active')
+        //
+        // let childValue = window.location.href.indexOf('introduce') !== -1 ?
+        //     0 : window.location.href.indexOf('progress') !== -1 ?
+        //         1 : window.location.href.indexOf('honour') !== -1 ?
+        //             2 : null
+        // $('.slidedown li').eq(childValue).addClass('active')
+
+        let value = window.location.href
+
+        $('.nav-list li').each(function () {
+            let currentValue = $(this).attr('hrefUrl')
+            if (value.indexOf(currentValue) !== -1) {
+                $(this).addClass('active')
+                $(this).parent('.slidedown').parent('li').addClass('active')
+            }
+        })
+
+        $('.nav-list li').on('click', function (event) {
+            event.stopPropagation()
+            let url = $(this).attr('hrefUrl')
+            if (url)
+                window.location.href = url + '.html'
+        })
     })
 </script>
 
