@@ -1,200 +1,82 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-    <meta charset="UTF-8">
-    <title>晋城天成化工有限公司</title>
-    <link rel="stylesheet" type="text/css" href="../css/global.css"/>
-    <style type="text/css">
-        .nav-header {
-            width: 1200px;
-            height: 100px;
-            margin: 0 auto;
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            justify-content: space-between;
-        }
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
 
-        .nav-header .logo {
-            cursor: pointer;
-            height: 100%;
-            margin-right: 100px;
-        }
+		<title>晋城天成化工有限公司</title>
+		<link rel="stylesheet" type="text/css" href="../css/global.css" />
+		<link rel="stylesheet" type="text/css" href="../css/header.css" media="screen and (min-width: 500px)" />
+		<link rel="stylesheet" type="text/css" href="../css/header-m.css" media="screen and (max-width: 499px)" />
 
-        .nav-header .nav-list {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-        }
+		<!--[if lt IE 9]>
+		   <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+		   <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+		<![endif]-->
+	</head>
 
-        .nav-header .nav-list > li {
-            position: relative;
-            font-size: 16px;
-            font-weight: 500;
-            text-align: center;
-            cursor: pointer;
-            margin: 0 20px;
-            transition: all .2s;
-        }
+	<body>
+		<div class="nav-header">
+			<img src="../img/logo.jpg" alt="图片加载失败" class="logo" />
+			<ul class="nav-list">
+				<li>
+					<a href="index.html">首页</a>
+				</li>
+				<li>
+					<a href="company.html">公司概况</a>
+					<ul class="slidedown">
+						<li>公司介绍</li>
+						<li>发展历程</li>
+						<li>资质荣誉</li>
+					</ul>
+				</li>
+				<li>
+					<a href="product.html">产品展示</a>
+				</li>
+				<li>
+					<a href="market.html">市场分布</a>
+				</li>
+				<li>
+					<a href="message.html">在线留言</a>
+				</li>
+				<li>
+					<a href="contact.html">联系我们</a>
+				</li>
+			</ul>
+			<ul class="language-tab">
+				<li class="active">中文</li>
+				<li>英文</li>
+			</ul>
+			<ul class="contact-info">
+				<li>
+					<img src="../img/icon-phone.png" alt="手机号码" />
+					<span>0356-6820651</span>
+				</li>
+				<li>
+					<img src="../img/icon-email.png" alt="邮箱" />
+					<span>tcxsb0808@126.com</span>
+				</li>
+			</ul>
+		</div>
 
-        .nav-header .nav-list > li:after {
-            content: "";
-            width: 0;
-            height: 2px;
-            background: #0D438D;
-            position: absolute;
-            top: 120%;
-            left: 50%;
-            transition: all .2s;
-        }
+		<script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.js"></script>
+		<script>
+			$(function() {
+				$('.logo').on('click', function() {
+					window.location.href = 'index.html'
+				})
+				let value = window.location.href.indexOf('index') !== -1 ?
+					0 : window.location.href.indexOf('company.html') !== -1 ?
+					1 : window.location.href.indexOf('product') !== -1 ?
+					2 : window.location.href.indexOf('market') !== -1 ?
+					3 : window.location.href.indexOf('message') !== -1 ?
+					4 : window.location.href.indexOf('contact') !== -1 ?
+					5 : null
+				$('.nav-list > li').eq(value).addClass('active')
+			})
+		</script>
 
-        .nav-header .nav-list > li:hover:after {
-            left: 0%;
-            width: 100%;
-        }
-
-        .nav-header .nav-list > li a:hover {
-            color: #0D438D;
-        }
-
-        .nav-header .nav-list > li.active a {
-            color: #0D438D;
-        }
-
-        .nav-header .nav-list > li.active:after {
-            left: 0%;
-            width: 100%;
-        }
-
-
-        .nav-header .nav-list > li:nth-child(2) {
-            position: relative;
-        }
-
-        .nav-header .nav-list > li:nth-child(2):hover .slidedown {
-            display: block;
-        }
-
-        .nav-header .nav-list > li .slidedown {
-            display: none;
-            position: absolute;
-            top: 35px;
-            left: -10px;
-            z-index: 99;
-            background-color: rgba(0, 0, 0, 0.8);
-            padding: 10px 0 0;
-            border-radius: 6px;
-        }
-
-        .nav-header .nav-list > li .slidedown li {
-            width: 80px;
-            color: #FFFFFF;
-            font-size: 14px;
-            margin-bottom: 10px;
-        }
-
-        .nav-header .language-tab {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-around;
-        }
-
-        .nav-header .language-tab li {
-            font-weight: 500;
-            cursor: pointer;
-        }
-
-        .nav-header .language-tab li:hover {
-            color: #0D438D;
-        }
-
-        .nav-header .language-tab li:first-child {
-            margin-bottom: 5px;
-        }
-
-        .nav-header .language-tab li.active {
-            color: #0D438D;
-        }
-
-        .nav-header .contact-info {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-around;
-        }
-
-        .nav-header .contact-info li {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-        }
-
-        .nav-header .contact-info li:first-child {
-            margin-bottom: 15px;
-        }
-
-        .nav-header .contact-info li img {
-            width: 20px;
-            margin-right: 10px;
-        }
-
-        .nav-header .contact-info li span {
-            color: #7999FF;
-        }
-    </style>
-</head>
-
-<body>
-<div class="nav-header">
-    <img src="../img/logo.jpg" alt="图片加载失败" class="logo"/>
-    <ul class="nav-list">
-        <li><a href="index.html">首页</a></li>
-        <li>
-            <a href="company.html">公司概况</a>
-            <ul class="slidedown">
-                <li>公司介绍</li>
-                <li>发展历程</li>
-                <li>资质荣誉</li>
-            </ul>
-        </li>
-        <li><a href="product.html">产品展示</a></li>
-        <li><a href="market.html">市场分布</a></li>
-        <li><a href="message.html">在线留言</a></li>
-        <li><a href="contact.html">联系我们</a></li>
-    </ul>
-    <ul class="language-tab">
-        <li class="active">中文</li>
-        <li>英文</li>
-    </ul>
-    <ul class="contact-info">
-        <li>
-            <img src="../img/icon-phone.png" alt="手机号码"/>
-            <span>0356-6820651</span>
-        </li>
-        <li>
-            <img src="../img/icon-email.png" alt="邮箱"/>
-            <span>tcxsb0808@126.com</span>
-        </li>
-    </ul>
-</div>
-
-<script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.js"></script>
-<script>
-    $(function () {
-        $('.logo').on('click', function () {
-            window.location.href = 'index.html'
-        })
-        let value = window.location.href.indexOf('index') !== -1 ?
-            0 : window.location.href.indexOf('company.html') !== -1 ?
-                1 : window.location.href.indexOf('product') !== -1 ?
-                    2 : window.location.href.indexOf('market') !== -1 ?
-                        3 : window.location.href.indexOf('message') !== -1 ?
-                            4 : window.location.href.indexOf('contact') !== -1 ?
-                                5 : null
-        $('.nav-list > li').eq(value).addClass('active')
-    })
-</script>
-
-</body>
+	</body>
 
 </html>

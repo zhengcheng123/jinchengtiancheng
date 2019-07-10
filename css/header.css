@@ -1,0 +1,134 @@
+.nav-header {
+    width: 1200px;
+    height: 100px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-header .logo {
+    cursor: pointer;
+    height: 100%;
+    margin-right: 100px;
+}
+
+.nav-header .nav-list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.nav-header .nav-list > li {
+    position: relative;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    cursor: pointer;
+    margin: 0 20px;
+    transition: all .2s;
+}
+
+.nav-header .nav-list > li:after {
+    content: "";
+    width: 0;
+    height: 2px;
+    background: #0D438D;
+    position: absolute;
+    top: 120%;
+    left: 50%;
+    transition: all .2s;
+}
+
+.nav-header .nav-list > li:hover:after {
+    left: 0%;
+    width: 100%;
+}
+
+.nav-header .nav-list > li a:hover {
+    color: #0D438D;
+}
+
+.nav-header .nav-list > li.active a {
+    color: #0D438D;
+}
+
+.nav-header .nav-list > li.active:after {
+    left: 0%;
+    width: 100%;
+}
+
+.nav-header .nav-list > li:nth-child(2) {
+    position: relative;
+}
+
+.nav-header .nav-list > li:nth-child(2):hover .slidedown {
+    display: block;
+}
+
+.nav-header .nav-list > li .slidedown {
+    display: none;
+    position: absolute;
+    top: 35px;
+    left: -10px;
+    z-index: 99;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 10px 0 0;
+    border-radius: 6px;
+}
+
+.nav-header .nav-list > li .slidedown li {
+    width: 80px;
+    color: #FFFFFF;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.nav-header .language-tab {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.nav-header .language-tab li {
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.nav-header .language-tab li:hover {
+    color: #0D438D;
+}
+
+.nav-header .language-tab li:first-child {
+    margin-bottom: 5px;
+}
+
+.nav-header .language-tab li.active {
+    color: #0D438D;
+}
+
+.nav-header .contact-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.nav-header .contact-info li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.nav-header .contact-info li:first-child {
+    margin-bottom: 15px;
+}
+
+.nav-header .contact-info li img {
+    width: 20px;
+    margin-right: 10px;
+}
+
+.nav-header .contact-info li span {
+    color: #7999FF;
+}
