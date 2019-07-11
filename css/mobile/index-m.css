@@ -1,0 +1,24 @@
+.banner {
+    width: 100%;
+    padding-top: 40%;
+    margin-bottom: 20px;
+    background: url(../../img/banner.png) no-repeat center center;
+    background-size: 100% 100%;
+    position: relative;
+}
+
+.banner .content {
+    display: none;
+    /*width: 800px;*/
+    /*display: flex;*/
+    /*flex-direction: column;*/
+    /*justify-content: space-around;*/
+    /*align-items: center;*/
+    /*padding: 40px 0 100px;*/
+    /*position: absolute;*/
+    /*top: 0;*/
+    /*right: 0;*/
+    /*bottom: 0;*/
+    /*left: 0;*/
+    /*margin: auto;*/
+}

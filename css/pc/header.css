@@ -28,6 +28,7 @@
     cursor: pointer;
     margin: 0 20px;
     transition: all .2s;
+    padding: 20px 0;
 }
 
 .nav-header .nav-list > li:after {
@@ -36,7 +37,7 @@
     height: 2px;
     background: #0D438D;
     position: absolute;
-    top: 120%;
+    top: 75%;
     left: 50%;
     transition: all .2s;
 }
@@ -46,7 +47,7 @@
     width: 100%;
 }
 
-.nav-header .nav-list > li a:hover {
+.nav-header .nav-list > li:hover > a {
     color: #0D438D;
 }
 
@@ -67,14 +68,21 @@
     display: block;
 }
 
+.nav-header .nav-list > li:nth-child(2):hover .triangle {
+    display: block;
+}
+
 .nav-header .nav-list > li .slidedown {
     display: none;
+    width: 80px;
     position: absolute;
-    top: 35px;
-    left: -10px;
+    top: 55px;
+    left: -8px;
+    right: 0;
+    margin: auto;
     z-index: 99;
     background-color: rgba(0, 0, 0, 0.8);
-    padding: 10px 0 0;
+    padding: 10px 0;
     border-radius: 6px;
 }
 
@@ -82,7 +90,33 @@
     width: 80px;
     color: #FFFFFF;
     font-size: 14px;
-    margin-bottom: 10px;
+    padding: 5px 0;
+}
+
+.nav-header .nav-list > li .slidedown li:hover {
+    background-color: #666666;
+}
+
+.nav-header .nav-list > li .slidedown li.active {
+    background-color: #666666;
+}
+
+.nav-header .nav-list > li .slidedown li a {
+    color: #FFFFFF;
+}
+
+.triangle {
+    display: none;
+    position: absolute;
+    top: 50px;;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid rgba(0, 0, 0, 0.8);
 }
 
 .nav-header .language-tab {
