@@ -3,22 +3,235 @@
     padding-top: 40%;
     margin-bottom: 20px;
     background: url(../../img/banner.png) no-repeat center center;
-    background-size: 100% 100%;
+    background-size: cover;
     position: relative;
 }
 
 .banner .content {
-    display: none;
-    /*width: 800px;*/
-    /*display: flex;*/
-    /*flex-direction: column;*/
-    /*justify-content: space-around;*/
-    /*align-items: center;*/
-    /*padding: 40px 0 100px;*/
-    /*position: absolute;*/
-    /*top: 0;*/
-    /*right: 0;*/
-    /*bottom: 0;*/
-    /*left: 0;*/
-    /*margin: auto;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    padding: 10px 0;
+}
+
+.banner .content .name {
+    color: #FFFFFF;
+    font-size: 14px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.banner .content .name::before {
+    content: '';
+    width: 50px;
+    height: 2px;
+    background-color: #FFFFFF;
+    margin-right: 20px;
+}
+
+.banner .content .name::after {
+    content: '';
+    width: 50px;
+    height: 2px;
+    background-color: #FFFFFF;
+    margin-left: 20px;
+}
+
+.banner .content .ambition {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.banner .content .ambition li {
+    width: 18px;
+    height: 18px;
+    color: rgba(255, 255, 255, 1);
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 18px;
+    letter-spacing: 18px;
+    background: linear-gradient(-270deg, rgba(255, 255, 255, 1) 22.3876953125%, rgba(121, 153, 255, 1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.banner .content .slogan {
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.banner .content .slogan li {
+    flex: 1;
+    text-align: center;
+    font-size: 12px;
+    color: #FFFFFF;
+    line-height: 14px;
+}
+
+.banner .content .slogan li+li {
+    border-left: 1px solid #FFFFFF;
+}
+
+.banner .content button {
+    width: 80px;
+    height: 25px;
+    color: #7999FF;
+    font-size: 12px;
+    background: rgba(255, 255, 255, 1);
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+}
+
+
+
+
+.main {
+    display: flex;
+    flex-direction: column;
+}
+
+.main .profile {
+    display: flex;
+    flex-direction: column;
+}
+
+.main .profile aside {
+    padding-top: 50%;
+    background: url(../../img/demo1.png) no-repeat center center;
+    background-size: cover;
+}
+
+.main .profile article {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    background-color: rgba(238, 238, 238, 1);
+    padding: 10px;
+}
+
+.main .profile article .title {
+    align-self: flex-start;
+    font-size: 16px;
+    font-weight: bold;
+    padding-bottom: 3px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #7999FF;
+}
+
+.main .profile article div p {
+    line-height: 30px;
+    text-indent: 2em;
+}
+
+.main .profile .check-more {
+    color: #7999FF;
+    font-size: 18px;
+    cursor: pointer;
+    background: url(../../img/arrow.png) no-repeat center right;
+    padding-right: 18px;
+    position: absolute;
+}
+
+.main .profile .check-more.behind a {
+    color: #7999FF;
+    font-size: 14px;
+}
+
+
+.main .product {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.main .product .title {
+    align-self: center;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 50px 0 60px;
+    padding-bottom: 3px;
+    border-bottom: 2px solid #7999FF;
+}
+
+.main .product ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.main .product ul li {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /*box-shadow: 0 2px 4px rgba(0, 0, 0, .12), 0 0 6px rgba(0, 0, 0, .04)*/
+}
+
+.main .product ul li+li {
+    margin-left: 20px;
+}
+
+.main .product ul li img {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.main .product ul li div {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
+    padding: 0 28px 30px;
+}
+
+.main .product ul li div span {
+    display: inline;
+    font-size: 24px;
+    text-align: center;
+    margin: 28px 0 22px;
+}
+
+.main .product ul li div p {
+    color: #666666;
+    font-size: 14px;
+    line-height: 28px;
+    margin-bottom: 16px;
+}
+
+.main .product ul li div button {
+    align-self: center;
+    border: none;
+    background-color: #7999FF;
+    border-radius: 10px;
+    color: #FFFFFF;
+    font-size: 16px;
+    padding: 10px 43px;
+    cursor: pointer;
+}
+
+.main .product .check-more {
+    align-self: center;
+    color: #7999FF;
+    font-size: 18px;
+    margin: 30px 0 60px;
+    cursor: pointer;
+    background: url(../../img/arrow.png) no-repeat center right;
+    padding-right: 18px;
+}
+
+.main .product .check-more a {
+    color: #7999FF;
 }
