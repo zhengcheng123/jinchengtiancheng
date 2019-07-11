@@ -314,7 +314,8 @@
 	font-size: 18px;
 }
 
-.main .message div p input, .main .message div p textarea {
+.main .message div p input,
+.main .message div p textarea {
 	width: 500px;
 	border: 1px solid #CCCCCC;
 	padding: 15px;

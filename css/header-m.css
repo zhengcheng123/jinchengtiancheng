@@ -1,0 +1,22 @@
+.nav-header {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.nav-header .logo {
+    cursor: pointer;
+    height: 100px;
+}
+
+.nav-header .nav-list {
+	display: none;
+}
+
+.nav-header .language-tab {
+	display: none;
+}
+
+.nav-header .contact-info {
+	display: none;
+}
