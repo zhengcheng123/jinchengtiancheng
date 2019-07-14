@@ -1,17 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3066ac62-c41e-4673-b62a-e8c84c3e2535" name="Default Changelist" comment="1、导航栏优化">
-      <change afterPath="$PROJECT_DIR$/css/mobile/index-m.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/pc/footer.css" afterDir="false" />
+    <list default="true" id="3066ac62-c41e-4673-b62a-e8c84c3e2535" name="Default Changelist" comment="1、媒体查询css">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/header-m.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/mobile/header-m.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/header.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/pc/header.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/index-m.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/mobile/footer-m.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/pc/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/global.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/global.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/mobile/footer-m.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/mobile/footer-m.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/mobile/index-m.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/mobile/index-m.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/views/footer.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/views/header.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/views/index.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -23,8 +18,78 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.40781796">
+    <splitter split-orientation="horizontal" split-proportion="0.6211778">
       <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/views/index.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="-66">
+                  <caret line="116" column="37" selection-start-line="116" selection-start-column="37" selection-end-line="116" selection-end-column="37" />
+                  <folding>
+                    <element signature="n#div#0;n#body#0;n#html#0;n#!!top" />
+                    <element signature="n#section#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+                    <element signature="n#section#1;n#div#1;n#body#0;n#html#0;n#!!top" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/css/pc/index.css">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="4830">
+                  <caret line="337" column="1" selection-start-line="282" selection-end-line="337" selection-end-column="1" />
+                  <folding>
+                    <element signature="e#8#198#0" />
+                    <element signature="e#217#432#0" />
+                    <element signature="e#457#555#0" />
+                    <element signature="e#588#682#0" />
+                    <element signature="e#714#807#0" />
+                    <element signature="e#836#922#0" />
+                    <element signature="e#954#1277#0" />
+                    <element signature="e#1304#1390#0" />
+                    <element signature="e#1420#1524#0" />
+                    <element signature="e#1557#1593#0" />
+                    <element signature="e#1619#1779#0" />
+                    <element signature="e#1787#1831#0" />
+                    <element signature="e#1848#1922#0" />
+                    <element signature="e#1945#2069#0" />
+                    <element signature="e#2094#2249#0" />
+                    <element signature="e#2281#2426#0" />
+                    <element signature="e#2457#2499#0" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/views/footer.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="567">
+                  <caret line="54" column="46" selection-start-line="54" selection-start-column="41" selection-end-line="54" selection-end-column="46" />
+                  <folding>
+                    <element signature="e#1218#1224#0" expanded="true" />
+                    <element signature="e#1224#1230#0" expanded="true" />
+                    <element signature="e#1230#1236#0" expanded="true" />
+                    <element signature="e#1236#1242#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/css/pc/footer.css">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="147">
+                  <caret line="7" column="18" lean-forward="true" selection-end-line="59" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/views/message.html">
@@ -39,71 +104,44 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/views/header.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="189">
-                  <caret line="9" column="8" selection-start-line="9" selection-start-column="8" selection-end-line="10" selection-end-column="121" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/css/pc/index.css">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="210">
-                  <caret line="10" selection-start-line="10" selection-end-line="23" selection-end-column="1" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/css/mobile/index-m.css">
-              <provider selected="true" editor-type-id="text-editor" />
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/views/index.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="42">
-                  <caret line="2" selection-start-line="2" selection-end-line="2" />
+                <state relative-caret-position="378">
+                  <caret line="18" column="6" lean-forward="true" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
                   <folding>
-                    <element signature="n#section#2;n#div#1;n#body#0;n#html#0;n#!!top" />
-                    <element signature="n#section#3;n#div#1;n#body#0;n#html#0;n#!!top" />
+                    <element signature="n#style#0;n#li#1;n#ul#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                   </folding>
                 </state>
               </provider>
             </entry>
           </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/css/global.css">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="522">
+                  <caret line="79" column="6" lean-forward="true" selection-start-line="79" selection-start-column="6" selection-end-line="79" selection-end-column="6" />
+                </state>
+              </provider>
+            </entry>
+          </file>
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/css/mobile/index-m.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="42">
-                  <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/css/mobile/header-m.css">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="336">
-                  <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/views/footer.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="210">
-                  <caret line="10" selection-start-line="10" selection-end-line="10" />
+                <state relative-caret-position="280">
+                  <caret line="220" column="21" selection-start-line="220" selection-start-column="13" selection-end-line="220" selection-end-column="21" />
                   <folding>
-                    <element signature="n#body#0;n#html#0;n#!!top" />
+                    <element signature="e#8#194#0" />
+                    <element signature="e#213#440#0" />
+                    <element signature="e#465#578#0" />
+                    <element signature="e#611#720#0" />
+                    <element signature="e#752#860#0" />
+                    <element signature="e#889#987#0" />
+                    <element signature="e#1019#1372#0" />
+                    <element signature="e#1399#1497#0" />
+                    <element signature="e#1527#1631#0" />
+                    <element signature="e#1664#1703#0" />
+                    <element signature="e#1729#1911#0" />
                   </folding>
                 </state>
               </provider>
@@ -111,14 +149,9 @@
           </file>
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/css/mobile/footer-m.css">
-              <provider selected="true" editor-type-id="text-editor" />
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/css/pc/footer.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1239">
-                  <caret line="59" selection-start-line="59" selection-end-line="59" />
+                <state relative-caret-position="210">
+                  <caret line="10" column="19" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
                 </state>
               </provider>
             </entry>
@@ -143,8 +176,10 @@
       <find>slidedown</find>
       <find>check-more</find>
       <find>behi</find>
-      <find>nav-header .language-tab li</find>
-      <find>nth-child</find>
+      <find>padding-bottom</find>
+      <find>.main .market article .title</find>
+      <find>title</find>
+      <find>6px 18px</find>
     </findStrings>
     <dirStrings>
       <dir>C:\Users\11603\Desktop\company</dir>
@@ -156,7 +191,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/css/global.css" />
         <option value="$PROJECT_DIR$/views/company.html" />
         <option value="$PROJECT_DIR$/views/message.html" />
         <option value="$PROJECT_DIR$/views/market.html" />
@@ -166,22 +200,20 @@
         <option value="$PROJECT_DIR$/css/index.css" />
         <option value="$PROJECT_DIR$/views/index.html" />
         <option value="$PROJECT_DIR$/css/header-m.css" />
-        <option value="$PROJECT_DIR$/views/header.html" />
         <option value="$PROJECT_DIR$/css/header.css" />
-        <option value="$PROJECT_DIR$/css/index-m.css" />
-        <option value="$PROJECT_DIR$/css/mobile/footer-m.css" />
+        <option value="$PROJECT_DIR$/views/header.html" />
+        <option value="$PROJECT_DIR$/css/global.css" />
         <option value="$PROJECT_DIR$/views/footer.html" />
-        <option value="$PROJECT_DIR$/css/pc/footer.css" />
-        <option value="$PROJECT_DIR$/css/mobile/header-m.css" />
+        <option value="$PROJECT_DIR$/css/mobile/footer-m.css" />
         <option value="$PROJECT_DIR$/css/mobile/index-m.css" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1912" />
-    <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1066" />
+    <option name="x" value="316" />
+    <option name="y" value="62" />
+    <option name="width" value="1400" />
+    <option name="height" value="1000" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -215,6 +247,11 @@
             <path>
               <item name="company" type="b2602c69:ProjectViewProjectNode" />
               <item name="company" type="462c0819:PsiDirectoryNode" />
+              <item name="img" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="company" type="b2602c69:ProjectViewProjectNode" />
+              <item name="company" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -239,8 +276,6 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\user\Desktop\company\css\pc" />
-      <recent name="C:\Users\user\Desktop\company\css\mobile" />
       <recent name="C:\Users\11603\Desktop\company\img" />
     </key>
   </component>
@@ -278,7 +313,11 @@
       <workItem from="1562600137770" duration="2754000" />
       <workItem from="1562731869232" duration="68000" />
       <workItem from="1562760328306" duration="916000" />
-      <workItem from="1562836186947" duration="597000" />
+      <workItem from="1562777306191" duration="76000" />
+      <workItem from="1562842285169" duration="3414000" />
+      <workItem from="1562944349391" duration="1619000" />
+      <workItem from="1562983144065" duration="4610000" />
+      <workItem from="1563108799482" duration="1309000" />
     </task>
     <task id="LOCAL-00001" summary="1、完成产品展示模块">
       <created>1562492904613</created>
@@ -308,20 +347,33 @@
       <option name="project" value="LOCAL" />
       <updated>1562604861347</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="1、媒体查询">
+      <created>1562777371887</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1562777371887</updated>
+    </task>
+    <task id="LOCAL-00006" summary="1、媒体查询css">
+      <created>1562864865182</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1562864865182</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="43107000" />
+    <option name="totallyTimeSpent" value="49654000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1912" y="-8" width="1936" height="1066" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.09694415" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.06954689" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Statistic" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -330,7 +382,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" weight="0.105150215" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.45986986" />
       <window_info anchor="bottom" id="Terminal" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -405,7 +457,9 @@
     <MESSAGE value="1、完成主要模块" />
     <MESSAGE value="1、优化跳转逻辑" />
     <MESSAGE value="1、导航栏优化" />
-    <option name="LAST_COMMIT_MESSAGE" value="1、导航栏优化" />
+    <MESSAGE value="1、媒体查询" />
+    <MESSAGE value="1、媒体查询css" />
+    <option name="LAST_COMMIT_MESSAGE" value="1、媒体查询css" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/css/global.min.css" />
@@ -454,38 +508,51 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/progress.html">
+    <entry file="file://$PROJECT_DIR$/css/header.css" />
+    <entry file="file://$PROJECT_DIR$/css/header-m.css" />
+    <entry file="file://$PROJECT_DIR$/css/index.css" />
+    <entry file="file://$PROJECT_DIR$/views/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="66" column="6" lean-forward="true" selection-start-line="66" selection-start-column="6" selection-end-line="66" selection-end-column="6" />
+        <state relative-caret-position="-66">
+          <caret line="116" column="37" selection-start-line="116" selection-start-column="37" selection-end-line="116" selection-end-column="37" />
+          <folding>
+            <element signature="n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#section#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#section#1;n#div#1;n#body#0;n#html#0;n#!!top" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/global.css">
+    <entry file="file://$PROJECT_DIR$/css/pc/index.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="10" column="3" lean-forward="true" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
+        <state relative-caret-position="4830">
+          <caret line="337" column="1" selection-start-line="282" selection-end-line="337" selection-end-column="1" />
+          <folding>
+            <element signature="e#8#198#0" />
+            <element signature="e#217#432#0" />
+            <element signature="e#457#555#0" />
+            <element signature="e#588#682#0" />
+            <element signature="e#714#807#0" />
+            <element signature="e#836#922#0" />
+            <element signature="e#954#1277#0" />
+            <element signature="e#1304#1390#0" />
+            <element signature="e#1420#1524#0" />
+            <element signature="e#1557#1593#0" />
+            <element signature="e#1619#1779#0" />
+            <element signature="e#1787#1831#0" />
+            <element signature="e#1848#1922#0" />
+            <element signature="e#1945#2069#0" />
+            <element signature="e#2094#2249#0" />
+            <element signature="e#2281#2426#0" />
+            <element signature="e#2457#2499#0" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/introduce.html">
+    <entry file="file://$PROJECT_DIR$/css/pc/footer.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/honour.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="742">
-          <caret line="76" column="12" selection-start-line="76" selection-start-column="12" selection-end-line="76" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/pc/header.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="153" column="24" lean-forward="true" selection-start-line="153" selection-start-column="24" selection-end-line="153" selection-end-column="24" />
+        <state relative-caret-position="147">
+          <caret line="7" column="18" lean-forward="true" selection-end-line="59" />
         </state>
       </provider>
     </entry>
@@ -500,62 +567,60 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/pc/index.css">
+    <entry file="file://$PROJECT_DIR$/views/header.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="10" selection-start-line="10" selection-end-line="23" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        <state relative-caret-position="378">
+          <caret line="18" column="6" lean-forward="true" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
           <folding>
-            <element signature="n#section#2;n#div#1;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#section#3;n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#style#0;n#li#1;n#ul#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/header.html">
+    <entry file="file://$PROJECT_DIR$/css/global.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="9" column="8" selection-start-line="9" selection-start-column="8" selection-end-line="10" selection-end-column="121" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/mobile/index-m.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/mobile/header-m.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
+        <state relative-caret-position="522">
+          <caret line="79" column="6" lean-forward="true" selection-start-line="79" selection-start-column="6" selection-end-line="79" selection-end-column="6" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/footer.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        <state relative-caret-position="567">
+          <caret line="54" column="46" selection-start-line="54" selection-start-column="41" selection-end-line="54" selection-end-column="46" />
           <folding>
-            <element signature="n#body#0;n#html#0;n#!!top" />
+            <element signature="e#1218#1224#0" expanded="true" />
+            <element signature="e#1224#1230#0" expanded="true" />
+            <element signature="e#1230#1236#0" expanded="true" />
+            <element signature="e#1236#1242#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/mobile/footer-m.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/pc/footer.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1239">
-          <caret line="59" selection-start-line="59" selection-end-line="59" />
+        <state relative-caret-position="210">
+          <caret line="10" column="19" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/mobile/index-m.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="220" column="21" selection-start-line="220" selection-start-column="13" selection-end-line="220" selection-end-column="21" />
+          <folding>
+            <element signature="e#8#194#0" />
+            <element signature="e#213#440#0" />
+            <element signature="e#465#578#0" />
+            <element signature="e#611#720#0" />
+            <element signature="e#752#860#0" />
+            <element signature="e#889#987#0" />
+            <element signature="e#1019#1372#0" />
+            <element signature="e#1399#1497#0" />
+            <element signature="e#1527#1631#0" />
+            <element signature="e#1664#1703#0" />
+            <element signature="e#1729#1911#0" />
+          </folding>
         </state>
       </provider>
     </entry>

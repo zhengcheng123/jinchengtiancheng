@@ -1,0 +1,61 @@
+.footer {
+    background-color: #EEEEEE;
+}
+
+.footer > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 0 10px;
+}
+
+.footer .address {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0;
+}
+
+.footer .address h5 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.footer .address ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer .address ul li {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer .address ul li p {
+    color: #666666;
+    font-size: 12px;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+
+.footer .address ul li .blank {
+    display: none;
+}
+
+.footer .qr-code {
+    padding-top: 25px;
+}
+
+.footer .qr-code img {
+    width: 40px;
+}
+
+.footer .qr-code p {
+    color: #666666;
+    font-size: 12px;
+    text-align: center;
+    margin: 10px 0 0 0;
+}
