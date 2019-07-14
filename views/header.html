@@ -1,40 +1,44 @@
 <!DOCTYPE html>
 <html>
 
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"/>
 
-		<title>晋城天成化工有限公司</title>
-		<link rel="stylesheet" type="text/css" href="../css/global.css" />
-		<link rel="stylesheet" type="text/css" href="../css/pc/header.css" media="screen and (min-width: 500px)" />
-		<link rel="stylesheet" type="text/css" href="../css/mobile/header-m.css" media="screen and (max-width: 499px)" />
+    <title>晋城天成化工有限公司</title>
+    <link rel="stylesheet" type="text/css" href="../css/global.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/pc/header.css" media="screen and (min-width: 500px)"/>
+    <link rel="stylesheet" type="text/css" href="../css/mobile/header-m.css" media="screen and (max-width: 499px)"/>
 
-		<!--[if lt IE 9]>
-		   <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-		   <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
-		<![endif]-->
-	</head>
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+</head>
 
 <body>
 <div class="nav-header">
+    <img src="../img/menu.png" alt="图片加载失败" class="menu">
     <img src="../img/logo.jpg" alt="图片加载失败" class="logo"/>
-    <ul class="nav-list">
-        <li hrefUrl="index">首页</li>
-        <li style="position:relative;">
-            <a>公司概况</a>
-            <ul class="slidedown">
-                <li hrefUrl="introduce">公司介绍</li>
-                <li hrefUrl="progress">发展历程</li>
-                <li hrefUrl="honour">资质荣誉</li>
-            </ul>
-            <i class="triangle"></i>
-        </li>
-        <li hrefUrl="product">产品展示</li>
-        <li hrefUrl="market">市场分布</li>
-        <li hrefUrl="message">在线留言</li>
-        <li hrefUrl="contact">联系我们</li>
-    </ul>
+    <div class="nav-bk">
+        <ul class="nav-list">
+            <li hrefUrl="index">首页</li>
+            <li style="position:relative;" class="slide">
+                <a>公司概况</a>
+                <i class="arrow-up"></i>
+                <ul class="slidedown">
+                    <li hrefUrl="introduce">公司介绍</li>
+                    <li hrefUrl="progress">发展历程</li>
+                    <li hrefUrl="honour">资质荣誉</li>
+                </ul>
+                <i class="triangle"></i>
+            </li>
+            <li hrefUrl="product">产品展示</li>
+            <li hrefUrl="market">市场分布</li>
+            <li hrefUrl="message">在线留言</li>
+            <li hrefUrl="contact">联系我们</li>
+        </ul>
+    </div>
     <ul class="language-tab">
         <li class="active">中文</li>
         <li>英文</li>
@@ -57,23 +61,6 @@
         $('.logo').on('click', function () {
             window.location.href = 'index.html'
         })
-        // let hrefData = ['index', 'introduce', 'product', 'market', 'message', 'contact']
-        // let value = window.location.href.indexOf('index') !== -1 ?
-        //     0 : window.location.href.indexOf('introduce') !== -1 ?
-        //         1 : window.location.href.indexOf('progress') !== -1 ?
-        //             1 : window.location.href.indexOf('honour') !== -1 ?
-        //                 1 : window.location.href.indexOf('product') !== -1 ?
-        //                     2 : window.location.href.indexOf('market') !== -1 ?
-        //                         3 : window.location.href.indexOf('message') !== -1 ?
-        //                             4 : window.location.href.indexOf('contact') !== -1 ?
-        //                                 5 : null
-        // $('.nav-list > li').eq(value).addClass('active')
-        //
-        // let childValue = window.location.href.indexOf('introduce') !== -1 ?
-        //     0 : window.location.href.indexOf('progress') !== -1 ?
-        //         1 : window.location.href.indexOf('honour') !== -1 ?
-        //             2 : null
-        // $('.slidedown li').eq(childValue).addClass('active')
 
         let value = window.location.href
 
@@ -90,6 +77,26 @@
             let url = $(this).attr('hrefUrl')
             if (url)
                 window.location.href = url + '.html'
+        })
+
+        $('.menu').on('click', function () {
+            $('.nav-bk').show()
+        })
+
+        $('.nav-bk').on('click', function (event) {
+            console.log(event.target.className)
+            if (event.target.className === 'nav-bk') {
+                $('.nav-bk').hide()
+            }
+        })
+
+        $('.slide').on('click', function () {
+            $('.slidedown').toggle('fast')
+            if ($('.arrow-up').hasClass('active')) {
+                $('.arrow-up').removeClass('active')
+            } else {
+                $('.arrow-up').addClass('active')
+            }
         })
     })
 </script>

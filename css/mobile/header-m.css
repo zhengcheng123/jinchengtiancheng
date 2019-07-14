@@ -1,7 +1,18 @@
 .nav-header {
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+}
+
+.nav-header .menu {
+    display: block;
+    width: 20px;
+    position: absolute;
+    left: 20px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
 }
 
 .nav-header .logo {
@@ -9,14 +20,62 @@
     height: 80px;
 }
 
-.nav-header .nav-list {
-	display: none;
+.nav-header .nav-bk {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    width: 100vw;
+    height: 100vh;
+}
+
+.nav-header .nav-bk .nav-list {
+    background-color: #7999FF;
+    width: 160px;
+    height: 100vh;
+    padding: 20px 0 20px 20px;
+}
+
+.nav-header .nav-list > li {
+    color: #FFFFFF;
+    padding: 10px 0;
+}
+
+.nav-header .nav-list > li a:hover {
+    color: #FFFFFF;
+}
+
+.arrow-up {
+    background: url("../../img/arrow-up.png") no-repeat center center;
+    background-size: cover;
+    display: block;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    right: 14px;
+    top: 14px;
+    transition: 0.3s;
+}
+
+.arrow-up.active {
+    transform: rotate(180deg);
+    transition: 0.3s;
+}
+
+.nav-header .nav-list > li .slidedown {
+    display: none;
+}
+
+.nav-header .nav-list > li .slidedown li {
+    padding: 10px 0 10px 40px;
 }
 
 .nav-header .language-tab {
-	display: none;
+    display: none;
 }
 
 .nav-header .contact-info {
-	display: none;
+    display: none;
 }

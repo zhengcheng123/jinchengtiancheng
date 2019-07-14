@@ -5,13 +5,13 @@ body {
 
 }
 
-@media screen and (min-width: 500px) { /*当屏幕尺寸大于800px时，应用下面的CSS样式*/
+@media screen and (min-width: 500px) { /*当屏幕尺寸大于500px时，应用下面的CSS样式*/
   body {
 	min-width: 1200px;
   }
 }
 
-@media screen and (max-width: 499px) { /*当屏幕尺寸小于799px时，应用下面的CSS样式*/
+@media screen and (max-width: 499px) { /*当屏幕尺寸小于499px时，应用下面的CSS样式*/
   body {
 	min-width: 200px;
   }
