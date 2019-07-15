@@ -1,136 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>晋城天成化工有限公司</title>
-    <style>
-        .banner {
-            width: 100%;
-            height: 480px;
-            background: url("../img/banner-1.png") no-repeat center bottom;
-            background-size: cover;
-            position: relative;
-        }
 
-        .banner > div {
-            width: 900px;
-            height: 200px;
-            position: absolute;
-            top: 0;
-            right: 0;
-            bottom: 0;
-            left: 0;
-            margin: auto;
-        }
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>晋城天成化工有限公司</title>
+		<link rel="stylesheet" type="text/css" href="../css/pc/contact.css" media="screen and (min-width: 500px)" />
+		<link rel="stylesheet" type="text/css" href="../css/mobile/contact-m.css" media="screen and (max-width: 499px)" />
+	</head>
 
-        .banner > div p {
-            color: #FFFFFF;
-            text-align: center;
-            margin-bottom: 55px;
-        }
+	<body>
+		<header></header>
 
+		<div class="banner">
+			<div>
+				<p>技术铸就品牌，口碑赢得天下</p>
+				<ul>
+					<li>雄厚资质</li>
+					<li>品质保障</li>
+					<li>历史悠久</li>
+				</ul>
+			</div>
+		</div>
+		<div class="contact">
+			<h5>联系我们</h5>
+			<div>
+				<p>地址：山西省晋城市陵川县崇文镇</p>
+				<p>电话：0356-6820666</p>
+				<p>传真：0356-6820651</p>
+				<p>网址：www.jcskysuccess.com</p>
+				<p>
+					<span>邮箱：</span>
+					<span>nfo@jcskysuccess.com<br />tcxsb0808@126.com</span>
+				</p>
+				<p>
+					<span>销售电话：</span>
+					<span>18635652858<br />18835633768</span>
+				</p>
+				<p>外贸：15635648555</p>
+			</div>
+		</div>
 
-        .banner > div p {
-            font-size: 50px;
-            letter-spacing: 15px;
-        }
+		<footer></footer>
+		<script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.js"></script>
+		<script type="text/javascript">
+			$(function() {
+				$('header').load('header.html')
+				$('footer').load('footer.html')
+			})
+		</script>
+	</body>
 
-        .banner > div ul {
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-        }
-
-        .banner > div ul li {
-            color: #FFFFFF;
-            font-size: 24px;
-            letter-spacing: 10px;
-            padding: 0 60px;
-            position: relative;
-        }
-
-        .banner > div ul li:nth-child(2)::before {
-            content: '';
-            width: 2px;
-            height: 20px;
-            background-color: #FFFFFF;
-            position: absolute;
-            left: 0;
-            top: 0;
-            bottom: 0;
-            margin: auto;
-        }
-
-        .banner > div ul li:nth-child(2)::after {
-            content: '';
-            width: 2px;
-            height: 20px;
-            background-color: #FFFFFF;
-            position: absolute;
-            right: 0;
-            top: 0;
-            bottom: 0;
-            margin: auto;
-        }
-
-        .contact {
-            width: 370px;
-            margin: 50px auto 0;
-            text-align: center;
-        }
-
-        .contact h5 {
-            display: inline;
-            font-size: 30px;
-            font-weight: bolder;
-            text-align: center;
-            border-bottom: 2px solid #7999FF;
-            margin: 0 auto;
-            padding-bottom: 5px;
-        }
-
-        .contact > div {
-            text-align: left;
-            padding: 50px 0;
-        }
-
-        .contact > div p {
-            line-height: 50px;
-        }
-    </style>
-</head>
-<body>
-<header></header>
-
-<div class="banner">
-    <div>
-        <p>技术铸就品牌，口碑赢得天下</p>
-        <ul>
-            <li>雄厚资质</li>
-            <li>品质保障</li>
-            <li>历史悠久</li>
-        </ul>
-    </div>
-</div>
-<div class="contact">
-    <h5>联系我们</h5>
-    <div>
-        <p>地址：山西省晋城市陵川县崇文镇</p>
-        <p>电话：0356-6820666</p>
-        <p>传真：0356-6820651</p>
-        <p>网址：www.jcskysuccess.com</p>
-        <p>邮箱：nfo@jcskysuccess.com；tcxsb0808@126.com</p>
-        <p>销售电话：18635652858 18835633768 外贸 15635648555</p>
-    </div>
-</div>
-
-<footer></footer>
-<script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.js"></script>
-<script type="text/javascript">
-    $(function () {
-        $('header').load('header.html')
-        $('footer').load('footer.html')
-    })
-</script>
-</body>
 </html>

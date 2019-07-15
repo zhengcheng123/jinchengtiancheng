@@ -1,139 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>晋城天成化工有限公司</title>
-    <style>
-        .banner {
-            width: 100%;
-            height: 480px;
-            background: url("../img/banner-4.png") no-repeat center bottom;
-            background-size: cover;
-            position: relative;
-        }
 
-        .banner > div {
-            width: 900px;
-            height: 200px;
-            position: absolute;
-            top: 0;
-            right: 0;
-            bottom: 0;
-            left: 0;
-            margin: auto;
-        }
+	<head>
+		<meta charset="UTF-8">
+		<title>晋城天成化工有限公司</title>
+		<link rel="stylesheet" type="text/css" href="../css/pc/message.css" media="screen and (min-width: 500px)" />
+		<link rel="stylesheet" type="text/css" href="../css/mobile/message-m.css" media="screen and (max-width: 499px)" />
 
-        .banner > div p {
-            color: #FFFFFF;
-            font-size: 46px;
-            letter-spacing: 15px;
-            text-align: center;
-            margin-bottom: 50px;
-        }
+	</head>
 
-        .banner > div p:last-child {
-            font-size: 24px;
-        }
+	<body>
+		<header></header>
+		<div class="banner">
+			<div>
+				<p>提供绿色安全产品</p>
+				<p>致力于人类可持续发展</p>
+			</div>
+		</div>
+		<div class="message">
+			<h5>在线留言</h5>
+			<div>
+				<p>
+					<span>您的姓名：</span>
+					<input type="" name="" id="" value="" placeholder="请输入您的姓名" />
+				</p>
+				<p>
+					<span>联系号码：</span>
+					<input type="" name="" id="" value="" placeholder="请输入您的联系号码" />
+				</p>
+				<p>
+					<span>电子邮箱：</span>
+					<input type="" name="" id="" value="" placeholder="请输入您的电子邮箱" />
+				</p>
+				<p>
+					<span>留言内容：</span>
+					<textarea name="" rows="" cols="" placeholder="请输入留言内容"></textarea>
+				</p>
+				<p>
+					<button>确认提交</button>
+				</p>
+			</div>
+		</div>
+		<footer></footer>
+		<script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.js"></script>
+		<script type="text/javascript">
+			$(function() {
+				$('header').load('header.html')
+				$('footer').load('footer.html')
+			})
+		</script>
+	</body>
 
-        .message {
-            width: 1200px;
-            display: flex;
-            flex-direction: column;
-            margin: 50px auto 30px;
-        }
-
-        .message h5 {
-            align-self: center;
-            font-size: 30px;
-            font-weight: bolder;
-            text-align: center;
-            border-bottom: 2px solid #7999FF;
-            padding-bottom: 5px;
-            margin-bottom: 40px;
-        }
-
-        .message div {
-            /*display: flex;
-            flex-direction: column;
-            justify-content: center;*/
-        }
-
-        .message div p {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            justify-content: center;
-            margin-bottom: 35px;
-        }
-
-        .message div p span {
-            font-size: 18px;
-        }
-
-        .message div p input, .message div p textarea {
-            width: 500px;
-            border: 1px solid #CCCCCC;
-            padding: 15px;
-        }
-
-        .message div p textarea {
-            min-width: 500px;
-            max-width: 500px;
-            min-height: 100px;
-            max-height: 300px;
-        }
-
-        .message div p button {
-            border: none;
-            background-color: #7999FF;
-            border-radius: 10px;
-            color: #FFFFFF;
-            font-size: 16px;
-            padding: 10px 43px;
-            cursor: pointer;
-        }
-
-    </style>
-</head>
-<body>
-<header></header>
-<div class="banner">
-    <div>
-        <p>提供绿色安全产品</p>
-        <p>致力于人类可持续发展</p>
-    </div>
-</div>
-<div class="message">
-    <h5>在线留言</h5>
-    <div>
-        <p>
-            <span>您的姓名：</span>
-            <input type="" name="" id="" value="" placeholder="请输入您的姓名" />
-        </p>
-        <p>
-            <span>联系号码：</span>
-            <input type="" name="" id="" value="" placeholder="请输入您的联系号码" />
-        </p>
-        <p>
-            <span>电子邮箱：</span>
-            <input type="" name="" id="" value="" placeholder="请输入您的电子邮箱" />
-        </p>
-        <p>
-            <span>留言内容：</span>
-            <textarea name="" rows="" cols="" placeholder="请输入留言内容"></textarea>
-        </p>
-        <p>
-            <button>确认提交</button>
-        </p>
-    </div>
-</div>
-<footer></footer>
-<script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.js"></script>
-<script type="text/javascript">
-    $(function () {
-        $('header').load('header.html')
-        $('footer').load('footer.html')
-    })
-</script>
-</body>
 </html>
