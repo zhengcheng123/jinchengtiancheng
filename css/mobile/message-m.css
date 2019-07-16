@@ -6,6 +6,7 @@ body {
 .banner {
     width: 100%;
     height: 120px;
+    min-height: 120px;
     background: url("../../img/banner-4.png") no-repeat center bottom;
     background-size: cover;
     position: relative;
@@ -37,7 +38,7 @@ body {
     flex: 1;
     display: flex;
     flex-direction: column;
-    margin: 20px auto 0;
+    padding: 20px;
 }
 
 .message h5 {
@@ -69,15 +70,15 @@ body {
 }
 
 .message div p input, .message div p textarea {
-    width: 60%;
+    width: 70%;
     border: 1px solid #CCCCCC;
     padding: 10px;
 }
 
 .message div p textarea {
-    min-width: 60%;
-    max-width: 60%;
-    min-height:60px;
+    min-width: 70%;
+    max-width: 70%;
+    min-height: 60px;
     max-height: 200px;
 }
 

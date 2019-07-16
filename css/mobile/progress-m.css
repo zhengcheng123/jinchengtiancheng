@@ -1,3 +1,7 @@
+body {
+    display: flex;
+    flex-direction: column;
+}
 
 .banner {
     width: 100%;
@@ -32,19 +36,19 @@
 }
 
 .progress {
-    width: 1200px;
+    flex: 1;
     margin: 0 auto;
-    padding: 50px 0;
+    padding: 20px 0;
     min-height: calc(100vh - 800px);
     box-sizing: border-box;
 }
 
 .progress h5 {
     display: inline;
-    font-size: 30px;
+    font-size: 16px;
     font-weight: bolder;
     border-bottom: 2px solid #7999FF;
-    padding-bottom: 5px;
+    padding-bottom: 3px;
 }
 
 .progress > div {

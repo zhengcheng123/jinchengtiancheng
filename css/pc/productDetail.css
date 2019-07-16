@@ -1,0 +1,67 @@
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.banner {
+    width: 100%;
+    height: 480px;
+    background: url("../../img/banner-2.png") no-repeat center center;
+    background-size: cover;
+    position: relative;
+}
+
+.banner > div {
+    width: 800px;
+    height: 280px;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+}
+
+.banner > div p {
+    color: #FFFFFF;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+
+.banner > div p {
+    font-size: 40px;
+    letter-spacing: 15px;
+}
+
+.banner > div p:last-child {
+    font-size: 20px;
+    font-weight: normal;
+    letter-spacing: normal;
+}
+
+.product {
+    flex: 1;
+    width: 1200px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 50px 20px;
+}
+
+.product h5 {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.product > div {
+    border: 1px solid #CCCCCC;
+    padding: 20px;
+}
+
+.product > div  img {
+    float: left;
+    width: 300px;
+    margin: 0 20px 20px 0;
+}

@@ -33,6 +33,7 @@
 
 .nav-header .nav-bk .nav-list {
     background-color: #7999FF;
+    margin-left: -160px;
     width: 160px;
     height: 100vh;
     padding: 20px 0 20px 20px;
@@ -66,6 +67,7 @@
 
 .nav-header .nav-list > li .slidedown {
     display: none;
+    margin-top: 10px;
 }
 
 .nav-header .nav-list > li .slidedown li {

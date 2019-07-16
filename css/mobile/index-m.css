@@ -224,6 +224,10 @@
     cursor: pointer;
 }
 
+.main .product ul li div button a {
+    color: #FFFFFF;
+}
+
 .main .product .check-more {
     align-self: center;
     color: #7999FF;
