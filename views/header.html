@@ -91,11 +91,13 @@
         })
 
         $('.slide').on('click', function () {
-            $('.slidedown').toggle('fast')
-            if ($('.arrow-up').hasClass('active')) {
-                $('.arrow-up').removeClass('active')
-            } else {
-                $('.arrow-up').addClass('active')
+            if (document.body.clientWidth < 1200) {
+                $('.slidedown').toggle('fast')
+                if ($('.arrow-up').hasClass('active')) {
+                    $('.arrow-up').removeClass('active')
+                } else {
+                    $('.arrow-up').addClass('active')
+                }
             }
         })
     })

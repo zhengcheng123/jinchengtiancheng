@@ -98,6 +98,10 @@
 	cursor: pointer;
 }
 
+.banner .content button a {
+	color: #7999FF;
+}
+
 .main {
 	display: flex;
 	flex-direction: column;

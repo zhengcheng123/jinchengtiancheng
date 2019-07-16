@@ -1,0 +1,108 @@
+.banner {
+    width: 100%;
+    height: 480px;
+    background: url("../../img/banner-2.png") no-repeat center center;
+    background-size: cover;
+    position: relative;
+}
+
+.banner > div {
+    width: 800px;
+    height: 280px;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+}
+
+.banner > div p {
+    color: #FFFFFF;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+
+.banner > div p {
+    font-size: 40px;
+    letter-spacing: 15px;
+}
+
+.banner > div p:last-child {
+    font-size: 20px;
+    font-weight: normal;
+    letter-spacing: normal;
+}
+
+.product {
+    display: flex;
+    flex-direction: column;
+    padding: 50px 0;
+}
+
+.product .title {
+    align-self: center;
+    font-size: 30px;
+    text-align: center;
+    font-weight: bolder;
+    border-bottom: 2px solid #7999FF;
+    padding-bottom: 5px;
+    margin-bottom: 40px;
+}
+
+.product section h5 {
+    font-size: 30px;
+    font-weight: bolder;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.product section ul {
+    max-width: 1200px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.product section ul li {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 40px 80px;
+    padding-bottom: 30px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .12), 0 0 6px rgba(0, 0, 0, .04);
+}
+
+.product section ul li p {
+    font-size: 24px;
+    line-height: 80px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.product section ul li div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.product section ul li div span {
+    color: #666666;
+    line-height: 30px;
+    text-align: center;
+}
+
+.product section ul li button {
+    align-self: center;
+    border: none;
+    background-color: #7999FF;
+    border-radius: 10px;
+    color: #FFFFFF;
+    font-size: 16px;
+    padding: 10px 43px;
+    cursor: pointer;
+}

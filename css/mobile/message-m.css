@@ -1,0 +1,92 @@
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.banner {
+    width: 100%;
+    height: 120px;
+    background: url("../../img/banner-4.png") no-repeat center bottom;
+    background-size: cover;
+    position: relative;
+}
+
+.banner > div {
+    height: 70px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+}
+
+.banner > div p {
+    color: #FFFFFF;
+    font-size: 16px;
+    letter-spacing: 5px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.banner > div p:last-child {
+    font-size: 12px;
+}
+
+.message {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin: 20px auto 0;
+}
+
+.message h5 {
+    align-self: center;
+    font-size: 16px;
+    font-weight: bolder;
+    text-align: center;
+    border-bottom: 2px solid #7999FF;
+    padding-bottom: 3px;
+    margin-bottom: 20px;
+}
+
+.message div {
+    /*display: flex;
+    flex-direction: column;
+    justify-content: center;*/
+}
+
+.message div p {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.message div p span {
+    font-size: 14px;
+}
+
+.message div p input, .message div p textarea {
+    width: 60%;
+    border: 1px solid #CCCCCC;
+    padding: 10px;
+}
+
+.message div p textarea {
+    min-width: 60%;
+    max-width: 60%;
+    min-height:60px;
+    max-height: 200px;
+}
+
+.message div p button {
+    border: none;
+    background-color: #7999FF;
+    border-radius: 6px;
+    color: #FFFFFF;
+    font-size: 12px;
+    padding: 6px 18px;
+    cursor: pointer;
+}
