@@ -1,6 +1,6 @@
 .banner {
     width: 100%;
-    height: 120px;
+	padding-top: 40%;
     background: url("../../img/banner-2.png") no-repeat center center;
     background-size: cover;
     position: relative;
@@ -37,7 +37,7 @@
 .product {
     display: flex;
     flex-direction: column;
-    padding: 20px 0;
+    padding: 20px;
 }
 
 .product .title {
@@ -47,7 +47,10 @@
     font-weight: bolder;
     border-bottom: 2px solid #7999FF;
     padding-bottom: 3px;
-    margin-bottom: 20px;
+}
+
+.product section {
+	padding-top: 20px;
 }
 
 .product section h5 {
@@ -58,19 +61,19 @@
 }
 
 .product section ul {
+	width: 90%;
+	margin: 0 auto;
     display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    margin: 0 auto;
+	flex-direction: column;
 }
 
 .product section ul li {
-    width: 80%;
+    width: 100%;
+    margin-bottom: 40px;
+    padding-bottom: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 0 40px 40px;
-    padding-bottom: 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, .12), 0 0 6px rgba(0, 0, 0, .04);
 }
 
@@ -79,7 +82,7 @@
 }
 
 .product section ul li p {
-    font-size: 14px;
+    font-size: 16px;
     line-height: 40px;
     text-align: center;
     margin-top: 10px;
@@ -88,7 +91,6 @@
 .product section ul li div {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     margin-bottom: 10px;
 }
 
@@ -108,4 +110,8 @@
     font-size: 12px;
     padding: 6px 18px;
     cursor: pointer;
+}
+
+.product section ul li button a {
+	color: #FFFFFF;
 }

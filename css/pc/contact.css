@@ -93,3 +93,8 @@
     display: flex;
     flex-direction: row;
 }
+
+.contact > div p span:first-child {
+	width: 100px;
+	text-align: right;
+}

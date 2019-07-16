@@ -1,102 +1,96 @@
-body {
-	display: flex;
-	flex-direction: column;
-}
-
 .banner {
-    width: 100%;
-    height: 120px;
-    min-height: 120px;
-    background: url("../../img/banner-1.png") no-repeat center bottom;
-    background-size: cover;
-    position: relative;
+	width: 100%;
+	padding-top: 40%;
+	background: url("../../img/banner-1.png") no-repeat center bottom;
+	background-size: cover;
+	position: relative;
 }
 
-.banner > div {
-    height: 70px;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    margin: auto;
+.banner>div {
+	height: 70px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	margin: auto;
 }
 
-.banner > div p {
-    color: #FFFFFF;
-    text-align: center;
-    margin-bottom: 15px;
+.banner>div p {
+	color: #FFFFFF;
+	text-align: center;
+	margin-bottom: 15px;
 }
 
-
-.banner > div p {
-    font-size:16px;
-    letter-spacing: 5px;
+.banner>div p {
+	font-size: 16px;
+	letter-spacing: 5px;
 }
 
-.banner > div ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+.banner>div ul {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
 }
 
-.banner > div ul li {
-    color: #FFFFFF;
-    font-size: 12px;
-    padding: 0 10px;
-    position: relative;
+.banner>div ul li {
+	color: #FFFFFF;
+	font-size: 12px;
+	padding: 0 10px;
+	position: relative;
 }
 
-.banner > div ul li:nth-child(2)::before {
-    content: '';
-    width: 2px;
-    height: 20px;
-    background-color: #FFFFFF;
-    position: absolute;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    margin: auto;
+.banner>div ul li:nth-child(2)::before {
+	content: '';
+	width: 2px;
+	height: 20px;
+	background-color: #FFFFFF;
+	position: absolute;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	margin: auto;
 }
 
-.banner > div ul li:nth-child(2)::after {
-    content: '';
-    width: 2px;
-    height: 20px;
-    background-color: #FFFFFF;
-    position: absolute;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    margin: auto;
+.banner>div ul li:nth-child(2)::after {
+	content: '';
+	width: 2px;
+	height: 20px;
+	background-color: #FFFFFF;
+	position: absolute;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	margin: auto;
 }
 
 .contact {
-	flex: 1;
-    margin: 20px auto 0;
-    text-align: center;
-    box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 15px;
 }
 
 .contact h5 {
-    display: inline;
-    font-size: 16px;
-    font-weight: bolder;
-    text-align: center;
-    border-bottom: 2px solid #7999FF;
-    margin: 0 auto;
-    padding-bottom: 3px;
+	font-size: 16px;
+	font-weight: bolder;
+	text-align: center;
+	border-bottom: 2px solid #7999FF;
+	padding-bottom: 3px;
 }
 
-.contact > div {
-    text-align: left;
-    padding: 10px 0;
+.contact>div {
+	padding: 20px 0;
 }
 
-.contact > div p {
+.contact>div p {
 	font-size: 14px;
-    line-height: 30px;
-    display: flex;
-    flex-direction: row;
+	line-height: 30px;
+	display: flex;
+	flex-direction: row;
 }
 
+.contact>div p span:first-child {
+	width: 70px;
+	text-align: right;
+}

@@ -81,10 +81,19 @@ input,
 textarea {
 	outline: none;
 	font-family: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+	border-radius: 3px;
+}
+
+button {
+	border: none;
 }
 
 .ellipsis {
 	text-overflow: ellipsis;
 	overflow: hidden;
 	white-space: nowrap;
+}
+
+header {
+	width: 100%;
 }
