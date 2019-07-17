@@ -1,22 +1,26 @@
 html,
 body {
-	width: 100%;
+	width: 100vw;
 	height: 100%;
-
 }
 
-@media screen and (min-width: 500px) { /*当屏幕尺寸大于500px时，应用下面的CSS样式*/
-  body {
-	min-width: 1200px;
-  }
+body {
+	/*display: none;*/
 }
 
-@media screen and (max-width: 499px) { /*当屏幕尺寸小于499px时，应用下面的CSS样式*/
-  body {
-	min-width: 200px;
-  }
+@media screen and (min-width: 500px) {
+	/*当屏幕尺寸大于500px时，应用下面的CSS样式*/
+	body {
+		min-width: 1200px;
+	}
 }
 
+@media screen and (max-width: 499px) {
+	/*当屏幕尺寸小于499px时，应用下面的CSS样式*/
+	body {
+		min-width: 300px;
+	}
+}
 
 html,
 body,
@@ -51,6 +55,7 @@ h6 {
 }
 
 body {
+	display: none;
 	color: #333;
 	font-size: 14px;
 	font-family: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
@@ -88,12 +93,11 @@ button {
 	border: none;
 }
 
-.ellipsis {
-	text-overflow: ellipsis;
-	overflow: hidden;
-	white-space: nowrap;
+header {
+	width: 100vw;
 }
 
-header {
-	width: 100%;
+footer {
+	width: 100vw;
+	display: none;
 }
